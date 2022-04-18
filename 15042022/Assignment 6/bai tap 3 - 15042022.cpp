@@ -1,7 +1,7 @@
 // cho mang 1 chieu n so nguyen, tim doan [a,b] sao cho chua tat ca cac gia tri trong mang
 # include <stdio.h>
 int main(){
-//nhap mang nso
+//nhap mang n so
 	int n;
 	do{
     printf("Nhap n >0: ");
