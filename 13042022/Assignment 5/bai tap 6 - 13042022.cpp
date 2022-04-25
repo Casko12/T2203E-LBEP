@@ -21,9 +21,9 @@ int main(){
 		if(c>max){
 			max=c;
 		}
-	}else{
+		}else{
 		c=0;
-	}
+		}
 	}
 	printf("So luong cac so duong lien tiep nhieu nhat: %d",max);
 }
