@@ -1,13 +1,10 @@
 #include <stdio.h>
-int daoNguocMang(int n,int arr[]){
-	int j;
-	for(int i=0; i<n/2; i++){
-        int j=n-i-1;
-        int tmp = arr[j];
-        arr[j] = arr[i];
-        arr[i] = tmp;
-    } 
-    return arr[j];
+void daoNguocHam(int n, int* arr){    
+    for (int i=0; i<n/2;i++) {
+        int tmp = arr[i];
+        arr[i] = arr[n-i-1];
+        arr[n-i-1] = tmp;
+    }
 }
 
 int main(){
@@ -21,9 +18,8 @@ int main(){
 	printf("Nhap phan tu thu %d cua mang: \n",i+1);
 	scanf("%d",&arr[i]);			
 	}
-	for (int i=0;i<n;i++){
-		
-		int j=daoNguocMang(n,arr);
-		printf("Ham dao nguoc: %d\n",j);
-	}	
+	daoNguocHam(n,arr);
+	for(int i=0;i<n;i++){
+	printf("Ham dao nguoc: %d\n",arr[i]);
+	}
 }
