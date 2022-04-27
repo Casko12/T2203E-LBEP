@@ -19,6 +19,7 @@ int main(){
 	scanf("%d",&arr[i]);			
 	}
 	daoNguocHam(n,arr);
+	
 	for(int i=0;i<n;i++){
 	printf("Ham dao nguoc: %d\n",arr[i]);
 	}
